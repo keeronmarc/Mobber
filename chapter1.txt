@@ -1,2 +1,2 @@
 this is a new document
-this is our second chapter
+add a third sentence
