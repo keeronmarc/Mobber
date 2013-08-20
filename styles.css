@@ -546,12 +546,13 @@ form {
 }*/
 
 .fancy-input input {
-    width:180px;
+    width:179px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px 0px 0px 8px;
     border-top: 1px solid #adadad;
     font-size: 13px;
+    display: inline-block;
     box-shadow: inset 0px 2px 3px -1px #aaa;
     padding:8px 8px;
 }
@@ -564,11 +565,12 @@ form {
 	top: 2px;
 	width: 34px;
 	padding-left: 7px;
+	padding: 0px 0px 0px 7px;
 	color: #fff;
 	border-radius: 0px 8px 8px 0px;
 	background: #acacac;
-	height: 35px;
 	z-index: 1000;
+	display: inline-block;
 }
 
 .right-shadow {
@@ -761,7 +763,7 @@ th, td {
 	width: 232px;
 	height: 7px;
 	z-index: 5;
-	background: #ff0066;
+	background: #BDBBB5;
 }
 
 .how-steps-button {
