@@ -1,35 +1,27 @@
-Mobber
-======
+# [Mobber](https://github.com/keeronmarc/Mobber) 
 
-Mobber Site -  Marco Suarez Design
+Mobber is a CSS, HTML front-end template for created and maintained by [Keeron Marc](github.com/keeronmarc) 
 
-Master Link
-**********************************************************
-keeronmarc.github.io/Mobber
+To get started, check out [https://github.com/keeronmarc/Mobber](https://github.com/keeronmarc/Mobber)!
 
-Design
-*************************************************************
-Mobber is a site designed via Marco Suarez via .png format
 
-<h1>A First Level Header</h1>
 
-<h2>A Second Level Header</h2>
+## Quick start
 
-<p>Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.</p>
+A simple way to get started :
 
-<p>The quick brown fox jumped over the lazy
-dog's back.</p>
+* Clone the repo: `git clone git://github.com/keeronmarc/Mobber.git`.
 
-<h3>Header 3</h3>
 
-<blockquote>
-    <p>This is a blockquote.</p>
+## Design
 
-    <p>This is the second paragraph in the blockquote.</p>
+The design template was pixelated by [Marco Suarez](http://www.marcosuarez.com/) 
 
-    <h2>This is an H2 in a blockquote</h2>
-</blockquote>
+For template re-use, you can ask permissions via Marco.
 
+
+
+## HTML/CSS Structure
+
+Mobber's site utilizes the latest CSS/HTML Markup in <inline-block> rather than <flaat>. 
 
