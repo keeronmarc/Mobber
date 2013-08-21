@@ -1,3 +1,5 @@
+/* global elements */
+
 body, p  {
 	margin: 0px;
 	font-family: futura;
@@ -8,16 +10,79 @@ body, p  {
 	vertical-align: top;
 }
 
-/* typography */
+/* typography for main elements short */
 
 h1, h6 {
   margin: 0;
 }
 
+/* navigation elements */
+
+nav {
+display: inline-block;
+}
+
+nav ul {
+	background: none; 
+	padding: 0;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+}
+	nav ul:after {
+		content: ""; 
+		clear: both; 
+		display: block;
+	}
+
+nav ul li {
+	float: left;
+}
+
+nav ul img {
+		margin: -7px 20px 0px -15px;
+}
+
+nav ul > li:hover:first-child {
+	display: none;
+}
+
+	nav ul li:hover {
+		background: #4b545f;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+		border-radius: 15px;
+	}
+
+		nav ul li:hover a {
+			color: #fff;
+		}
+
+	nav ul li a {
+		display: block; 
+		padding: 4px 15px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 14px;
+	}
+
+.arrow-down {
+	width: 0; 
+	height: 0;
+	padding: 0px 0px 0px 0px; 
+	margin: 29px auto 0 auto;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;			
+	border-top: 8px solid #fff;
+	display: inline-block;
+}
+
+
 /* Main CSS */
 
-
-.main_header {
+header {
 	width: 100%;
 	margin: 0px;
 	/*border: 0px solid #ff0066; */
@@ -25,26 +90,9 @@ h1, h6 {
 	height: 60px;
 }
 
-.logo {
-	height: 32px;
-	width: 168px;
-	border: 0px solid #ff0066;
-	display: inline-block;
-	padding: 13px 0px 0px 0px;
-}
-
 .profile_contents {
 	float:right;
 	margin-right: 40px;
-}
-
-.nav_item {
-	text-transform: uppercase;
-	font-size: 14px;
-	color: #fff;
-	width: auto;
-	height: 18px;
-	padding: 0px 0px 0px 40px;
 }
 
 .profile_name {
@@ -52,17 +100,7 @@ h1, h6 {
 	padding: 0px 4px 0px 0px;
 }
 
-.arrow-down {
-	width: 0; 
-	height: 0; 
-	margin: 0px auto 0 auto;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;			
-	border-top: 8px solid #fff;
-	display: inline-block;
-}
-
-.c-example {
+.circle-picture {
 	width: 42px;
 	height: 42px;
 	float: left;
@@ -89,9 +127,9 @@ h1, h6 {
 	font-size: 29px;
 	height: auto;
 	width: 924px;
-	
 	font-weight: normal;
 	color: #333;
+
 }
 
 .main_content {
@@ -526,6 +564,15 @@ h6 {
 	text-shadow: 0px 1px 0px #333;
 }
 
+.button:hover {
+	background: #434342;
+	  text-shadow: 0 -1px 1px #2361a4;
+}
+
+.button:active {
+	background: #838382;
+}
+
 .button:nth-child(odd) {
 	margin: 0px 0px 5px 0px;
 }
@@ -546,12 +593,13 @@ form {
 }*/
 
 .fancy-input input {
-    width:180px;
+    width:179px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px 0px 0px 8px;
     border-top: 1px solid #adadad;
     font-size: 13px;
+    display: inline-block;
     box-shadow: inset 0px 2px 3px -1px #aaa;
     padding:8px 8px;
 }
@@ -564,11 +612,12 @@ form {
 	top: 2px;
 	width: 34px;
 	padding-left: 7px;
+	padding: 0px 0px 0px 7px;
 	color: #fff;
 	border-radius: 0px 8px 8px 0px;
 	background: #acacac;
-	height: 35px;
 	z-index: 1000;
+	display: inline-block;
 }
 
 .right-shadow {
@@ -616,8 +665,14 @@ hr {
 	vertical-align: middle;
 	display: table-cell;
 	/*box-shadow: inset 0px 1px 0px #fff;	*/
-	box-shadow: 0px 1px 2px 1px #555;
+	box-shadow: 0px 1px 1px 0px #999;
 	text-shadow: 0px 1px 1px rgba(183, 103, 0, 0.8);
+}
+
+.button-main:hover {
+	background: #FFE200;
+	text-shadow:text-shadow: 2px 4px 5px rgba(100, 100, 100, 1);
+	cursor: pointer;
 }
 
 .how-btn {
@@ -779,7 +834,7 @@ th, td {
 	font-size: 19px;
 	font-weight: bolder;
 	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.3);
-	background: #ff0066;
+	background: #E9E9E9;
 	border: 1px solid #7F7B77;
 	background: linear-gradient(to bottom, rgba(214,214,214,1) 0%,rgba(250,250,250,1) 100%); /* W3C */
 	box-shadow: inset 0px 3px 0px 0px #fff, inset 0px -2px 0px 1px #E7E7E7, 0px 2px 1px 1px #aaa;
@@ -828,3 +883,6 @@ th, td {
 	font-size: 24px;
 }
 
+.how-button:hover {
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(180,186,180,1) 100%); /* W3C */
+}
